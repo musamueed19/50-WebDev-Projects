@@ -7,7 +7,7 @@
   /* styling for images */
   /* background-size: auto 100%; */
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 
   height: 80vh;
@@ -26,6 +26,10 @@
   /* adding transitions and making it relative */
   position: relative;
   transition: flex 0.7s ease-in;
+}
+
+.panel:nth-of-type(4) {
+  background-position: center;
 }
 
 .panel h3 {
