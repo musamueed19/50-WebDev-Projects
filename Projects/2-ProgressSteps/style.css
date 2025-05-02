@@ -79,7 +79,7 @@ body {
   top: 50%;
   left: 0;
   height: 4px;
-  width: 0%;
+  width: 50%;
 
   transform: translateY(-50%);
   z-index: -1;

@@ -1,5 +1,5 @@
 /* Font - import */
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 @import "tailwindcss";
 
@@ -19,14 +19,16 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --line-border-fill: #3498db;
+    --circle-bg-fill: #3aa6ee;
+    --line-border-empty: #e0e0e0;
   }
 }
 
 /* Universal Selector */
 * {
-
-    /* adding any padding or border in the element, will not effect the width of it */
-    box-sizing: border-box;
+  /* adding any padding or border in the element, will not effect the width of it */
+  box-sizing: border-box;
 }
 
 body {

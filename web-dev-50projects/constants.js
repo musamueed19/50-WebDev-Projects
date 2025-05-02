@@ -21,3 +21,16 @@ export const expandingCards = [
     title: "Mountain - Clouds",
   },
 ]; 
+
+
+export const projectsList = [
+  {
+    href: "1-expandingcards",
+    title: "Expanding Cards"
+  },
+  {
+    href: "2-progresssteps",
+    title: "Progress Steps"
+  },
+
+]
