@@ -15,7 +15,7 @@ const Card = ({ url, title, isActive, onClick }) => {
       style={{
         backgroundImage: `url(${url})`,
       }}
-      onClick={onClick}
+      onMouseOver={onClick}
     >
       <h3>{title}</h3>
     </div>
