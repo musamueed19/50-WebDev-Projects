@@ -1,22 +1,22 @@
 export const expandingCards = [
   {
-    url: "https://unsplash.com/photos/an-airplane-window-with-a-view-of-the-snow-covered-mountains-_G7FW24mzb0",
+    url: "https://plus.unsplash.com/premium_photo-1673657332512-b87806f4f49e?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Explore the World",
   },
   {
-    url: "https://unsplash.com/photos/green-trees-and-plants-during-daytime-z7ofnYF_qsI",
+    url: "https://images.unsplash.com/photo-1588204975370-3b8f53ec5ea1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Wild Forest",
   },
   {
-    url: "https://unsplash.com/photos/a-beach-with-palm-trees-and-the-ocean-in-the-background-Ox_6M68VqfQ",
+    url: "https://images.unsplash.com/photo-1579493933703-70473cdf84f8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Sunny Beach",
   },
   {
-    url: "https://unsplash.com/photos/a-beach-with-palm-trees-and-the-ocean-in-the-background-Ox_6M68VqfQ",
+    url: "https://plus.unsplash.com/premium_photo-1670182502090-a5d58b24f25b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "City on Winter",
   },
   {
-    url: "https://unsplash.com/photos/a-very-tall-mountain-covered-in-snow-under-a-cloudy-sky-YVDZINbyNd4",
+    url: "https://plus.unsplash.com/premium_photo-1688645554172-d3aef5f837ce?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Mountain - Clouds",
   },
 ]; 
