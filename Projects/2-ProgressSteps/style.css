@@ -1,0 +1,144 @@
+/* Font - import */
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+
+/* to define custom properties, like variables
+we need scope like root scope */
+:root {
+    --line-border-fill: #3498db;
+    --circle-bg-fill: #3aa6ee;
+    --line-border-empty: #e0e0e0;
+}
+
+
+/* Universal Selector */
+* {
+  /* adding any padding or border in the element, will not effect the width of it */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+
+  /* remove margin */
+  margin: 0;
+
+  /* center of the viewport, both vertical and horizontal prespective */
+  /* for the flexbox */
+  display: flex;
+
+  /* we can manage flexbox, direction */
+  background-color: #f6f7fb;
+
+  align-items: center;
+  justify-content: center;
+
+  /* as, it naturally have its height as it takes, it increases */
+  /* to give it height */
+  height: 100vh;
+
+  /* to don't show scroll bar, use overflow hidden */
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+
+  /* let's make position inside of it to be relative */
+  position: relative;
+
+  margin-bottom: 30px;
+
+  max-width: 100%;
+
+  /* set default width will be 350px */
+  width: 350px;
+}
+
+.progress-container::before {
+  content: "";
+  background-color: var(--line-border-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 0%;
+
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #999;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50%;
+
+  /* making it rounded */
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 3px solid var(--line-border-empty);
+
+  /* making it center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* addming transition on when border color changes */
+  transition: 0.4s ease;
+}
+
+.circle.active {
+    /* as we are using the same color, so, we will define the some custom  properties top */
+    border-color: var(--line-border-fill);
+    background-color: var(--circle-bg-fill);
+    color: #fff;
+}
+
+.btn {
+    background-color: var(--line-border-fill);
+    color: #fff;
+    
+    
+    
+    border-radius: 6px;
+    padding: 8px 30px;
+    border: none;
+    font-size: 14px;
+    margin: 5px;
+
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:disabled {
+    background-color: var(--line-border-empty);
+    color: #888;
+    border: 1px solid #ccc;
+    
+    cursor: not-allowed;
+    transform: none;
+}

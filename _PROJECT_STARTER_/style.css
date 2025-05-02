@@ -1,0 +1,35 @@
+/* Font - import */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* Universal Selector */
+* {
+
+    /* adding any padding or border in the element, will not effect the width of it */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    /* remove margin */
+    margin: 0;
+
+    /* center of the viewport, both vertical and horizontal prespective */
+    /* for the flexbox */
+    display: flex;
+
+    /* we can manage flexbox, direction */
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+
+    /* as, it naturally have its height as it takes, it increases */
+    /* to give it height */
+    height: 100vh;
+
+
+    /* to don't show scroll bar, use overflow hidden */
+    overflow: hidden;
+}
