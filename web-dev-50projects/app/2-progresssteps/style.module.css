@@ -41,7 +41,10 @@
   transform: translateY(-50%);
 
   height: 4px;
-  width: 48%;
+  width: 0%;
+
+  /* max width */
+  max-width: inherit;
 
   border-radius: 5px;
   z-index: -1;
@@ -71,11 +74,19 @@
   align-items: center;
 }
 
-.circle.active {
+.circle.completed {
   /* color, bg */
   color: #fff;
   border-color: var(--line-border-fill);
   background-color: var(--circle-bg-fill);
+
+}
+
+.circle.active {
+  border-color: var(--line-border-fill);
+
+  /* transitions */
+  transition: 0.4s ease 0.2s;
 }
 
 .btn {

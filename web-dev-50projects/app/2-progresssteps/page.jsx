@@ -11,9 +11,9 @@ const ProgressStepsPage = () => {
   // Calculate the width of the progress line
   const progressWidth = ((stepIndex - 1) / (totalSteps - 1)) * 100;
 
-  // useEffect(() => {
-  //   console.log(stepIndex);
-  // }, [stepIndex]);
+  useEffect(() => {
+    console.log(stepIndex);
+  }, [stepIndex]);
 
   return (
     <div className={styles.container}>
@@ -34,7 +34,9 @@ const ProgressStepsPage = () => {
           <div
             key={index + 1}
             className={`${styles.circle} ${
-              index + 1 <= stepIndex && styles.active
+              index + 1 < stepIndex && styles.completed
+              } ${
+              stepIndex === index + 1 && styles.active
             }`}
           >
             {index + 1}
@@ -46,18 +48,18 @@ const ProgressStepsPage = () => {
       <button
         className={styles.btn}
         id="prev"
-        disabled={stepIndex === 0}
-        onClick={() => setStepIndex((prev) => Math.max(0, --prev))}
+        disabled={stepIndex === 1}
+        onClick={() => setStepIndex((prev) => Math.max(1, --prev))}
       >
         Prev
       </button>
       <button
         className={styles.btn}
         id="next"
-        disabled={stepIndex === 4}
-        onClick={() => setStepIndex((prev) => Math.min(totalSteps, ++prev))}
+        disabled={stepIndex === 5}
+        onClick={() => setStepIndex((prev) => Math.min(totalSteps + 1, ++prev))}
       >
-        Next
+        {stepIndex >= 4 ? "Finish" : "Next"}
       </button>
     </div>
   );
